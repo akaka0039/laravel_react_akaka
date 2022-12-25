@@ -1,9 +1,71 @@
 # Laravel React Example Full Stack Application
 
-Demo: https://laravel-react-akaka.com/users
-There are the error which is 500(server error)
-Only use the functions which are 'login', 'signup' and 'delete' now
-2022 12 25
+Demo: https://laravel-react-akaka.com/users  
+There are the error which is 500(server error)  
+Only use the functions which are 'login', 'signup' and 'delete' now 2022 12 25
+
+# purpose
+
+manege user information which are name and email
+
+# major function
+
+login  
+signup  
+delete  
+▲edit  
+▲add new  
+※ ▲ we can not use, I try to solve them now.
+
+# dependencies
+
+```
+"laravel": "^9.19",
+"react": "^18.2.0",
+"axios": "^1.1.2",
+"laravel-vite-plugin": "^0.7.2",
+"lodash": "^4.17.19",
+"postcss": "^8.1.14",
+"vite": "^4.0.0"
+
+"server"
+hostinger.com
+```
+
+# build/deploy
+
+build:  
+nmp run build
+
+deploy:
+
+1. make basic setting in hostinger
+2. login ssh
+3. put command
+   cd domains  
+   git clone https://github.com/akaka0039/laravel_react_akaka.git api.laravel-example.com  
+   cd api.laravel-example.com
+
+[install composer]:  
+composer --version  
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"  
+php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"  
+php composer-setup.php  
+php -r "unlink('composer-setup.php');"
+
+php composer.phar install
+
+[make env file]  
+cp .env.example .env  
+vim .env  
+php artisan key:generate --ansi  
+php artisan migrate  
+php artisan db:seed
+
+cd ../laravel-react-akaka.com/public_html  
+ln -s ~/domains/api.laravel-example.com/public api
+
+please check the video ↓
 
 # Reference
 
