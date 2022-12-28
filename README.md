@@ -2,7 +2,7 @@
 
 Demo: https://laravel-react-akaka.com/users  
 There are the error which is 500(server error)  
-Only use the functions which are 'login', 'signup' and 'delete' now 2022 12 25
+~Only use the functions which are 'login', 'signup' and 'delete' 2022 12 25~
 
 # purpose
 
@@ -13,9 +13,9 @@ manege user information which are name and email
 login  
 signup  
 delete  
-▲edit  
-▲add new  
-※ ▲ we can not use, I try to solve them now.
+edit  
+add new  
+~※ ▲ we can not use, I try to solve them now.~
 
 # dependencies
 
